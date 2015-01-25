@@ -24,10 +24,10 @@ class Welcome extends CI_Controller {
             'update'=>'edit'
         );
     }
-    
+
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$this->load->view('main');
 	}
 }
 
