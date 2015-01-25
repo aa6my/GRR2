@@ -2,21 +2,10 @@
 
 class Games extends CI_Controller {
 
-	/**
-	 * Index Page for this controller.
-	 *
-	 * Maps to the following URL
-	 * 		http://example.com/index.php/welcome
-	 *	- or -  
-	 * 		http://example.com/index.php/welcome/index
-	 *	- or -
-	 * Since this controller is set as the default controller in 
-	 * config/routes.php, it's displayed at http://example.com/
-	 *
-	 * So any other public methods not prefixed with an underscore will
-	 * map to /index.php/welcome/<method_name>
-	 * @see http://codeigniter.com/user_guide/general/urls.html
-	 */
+	public function __construct(){
+        parent::__construct();
+        $this->load->helper('url');
+    }
 
 	public function access_map(){
         return array(
@@ -27,7 +16,28 @@ class Games extends CI_Controller {
 
 	public function index()
 	{
-		//$this->load->view('main');
+		$table = "games";
+		$data['game_list']  = $this->grr_model->get_all_rows($table,false,false, false, false, false);
+		$this->load->view('game_lists.php', $data);
+	}
+
+	public function game_list_view(){
+		$game_id = $this->uri->segment(3);
+		$table = "games";
+		$where = array('game_id'=>$game_id);
+		$data['game']  = $this->grr_model->get_all_rows($table,$where,false, false, false, false);
+
+
+		$table = "reviews";
+		//$tableNameToJoin = 'system_users';
+        //$tableRelation = "reviews.user_id = system_users.id";
+
+        $tableNameToJoin = array('system_users');       
+        $tableRelation = array('reviews.user_id = system_users.id'
+                               );
+        //$this->Midae_model->get_all_rows1("invoices", $where, $tableNameToJoin, $tableRelation, false, false); 
+		$data['review']  = $this->grr_model->get_all_rows($table,$where, $tableNameToJoin, $tableRelation, false, false);
+		$this->load->view('game_list_view.php', $data);
 	}
 }
 

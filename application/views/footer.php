@@ -38,7 +38,7 @@
 		</div>
 	</div>
 </div><!-- /footer-wrap -->
-<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+
 <script src="<?php echo base_url() ?>assets/js/jquery.flexslider-min.js"></script>
 <script src="<?php echo base_url() ?>assets/js/superfish.js"></script>
 <script src="<?php echo base_url() ?>assets/fancybox/jquery.fancybox.pack.js"></script>
