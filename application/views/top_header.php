@@ -31,7 +31,7 @@
 						<li>
 							<a href="#">News</a>
 							<ul>
-								<li><a href="<?php echo base_url() ?>news/newsrelease">New Release</a></li>
+								<li><a href="<?php echo base_url() ?>news/newrelease">New Release</a></li>
 								<li><a href="<?php echo base_url() ?>news/comingsoon">Coming Soon</a></li>	
 							</ul>
 						</li>
