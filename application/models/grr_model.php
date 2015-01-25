@@ -94,10 +94,9 @@ class Grr_model extends CI_Model {
     * @param  [array] $where [condition to apply]
     * @return [type]        [return data sets]
     */
-    function get_all_rows($table,$where, $tableNameToJoin, $tableRelation, $likes, $places)
+    /*function get_all_rows($table,$where, $tableNameToJoin, $tableRelation, $likes, $places)
     {
-            //$data = array();
-            //$query = $this->db->query("SELECT *FROM $table");
+            
 
             $this->db->select('*');
             $this->db->from($table);
@@ -114,15 +113,12 @@ class Grr_model extends CI_Model {
            if($likes!=false){
             $this->db->like($likes, 'after'); 
            }
-            /*foreach ($query->result_array() as $row)
-            {
-               $data[] = $row;
-            }*/
+           
             $query = $this->db->get();
             return $query->result_array(); 
-            //return $data;
+            
     }
-
+*/
    
 
 
@@ -180,11 +176,9 @@ class Grr_model extends CI_Model {
 
     }
 
-    function get_all_rows1($table,$where, $tableNameToJoin, $tableRelation, $likes, $places)
+    function get_all_rows($table,$where, $tableNameToJoin, $tableRelation, $likes, $places)
     {
-            //$data = array();
-            //$query = $this->db->query("SELECT *FROM $table");
-
+            
             $this->db->select('*');
             $this->db->from($table);
 
@@ -202,13 +196,10 @@ class Grr_model extends CI_Model {
            if($likes!=false){
             $this->db->like($likes, 'after'); 
            }
-            /*foreach ($query->result_array() as $row)
-            {
-               $data[] = $row;
-            }*/
+           
             $query = $this->db->get();
             return $query->result_array(); 
-            //return $data;
+            
     }
 
 
