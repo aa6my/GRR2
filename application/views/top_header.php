@@ -18,27 +18,30 @@
 				<nav id="navigation" class="twelve columns alpha">
 					<ul class="nav group">
 						<li>
-							<a href="homepage.php">Home</a>
+							<a href="<?php echo base_url() ?>">Home</a>
+						</li>
+						<li>
+							<a href="#">Games</a>
 							<ul>
-								<li><a href="homepage_alt.php">Homepage Alternative 1</a></li>
-								<li><a href="homepage_alt2.php">Homepage Alternative 2</a></li>
-								<li><a href="homepage_narrow1.php">Homepage Narrow sidebar 1</a></li>
+								<li><a href="<?php echo base_url() ?>games">All Games</a></li>
+								<li><a href="<?php echo base_url() ?>games/latest">Latest Games</a></li>
+								<li><a href="<?php echo base_url() ?>games/popular">Popular Games</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="listing_2col.php">Listing 2 columns</a>
+							<a href="#">News</a>
 							<ul>
-								<li><a href="listing_3col.php">Listing 3 columns</a></li>
-								<li><a href="listing_4col.php">Listing 4 columns</a></li>
-								<li><a href="listing_sidebar.php">Listing w/ Sidebar</a></li>
+								<li><a href="<?php echo base_url() ?>news/newsrelease">New Release</a></li>
+								<li><a href="<?php echo base_url() ?>news/comingsoon">Coming Soon</a></li>	
 							</ul>
 						</li>
 						<li>
-							<a href="post.php">Post template</a>
+							<a href="#">About Us</a>
+							<ul>
+								<li><a href="<?php echo base_url() ?>about">About</a></li>
+								<li><a href="<?php echo base_url() ?>about/contactus">Contact Us</a></li>	
+							</ul>
 						</li>
-						<li>
-							<a href="fullwidth.php">Fullwidth</a>
-						</li>	
 					</ul>
 				</nav><!-- /nav -->
 				<form method="post" action="action.php" id="search" class="four columns omega">
