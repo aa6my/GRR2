@@ -16,7 +16,7 @@
 				foreach ($game_list as $key => $value)
 			    { ?>
 				<article class="four columns alpha item">
-					<img alt="" src="<?php echo $value['game_image'];?>" class="scale-with-grid" />
+					<img alt="" src="<?php echo base_url()."upload/images/".$value['game_image'];?>" class="scale-with-grid" />
 					<div class="item-content">
 						<span class="stars four-stars">5 stars</span>
 						<time datetime="2012-10-15"> <?php echo $value['game_release'];?></time>							

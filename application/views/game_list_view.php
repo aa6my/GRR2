@@ -10,7 +10,7 @@
     <div class="row">	                
 		
 		<article class="sixteen columns item">
-	       <center><img alt="" src="<?php echo $game[0]['game_image'];?>" class="scale-with-grid"></center>
+	       <center><img alt="" src="<?php echo base_url()."upload/images/".$game[0]['game_image'];?>" class="scale-with-grid"></center>
 	
 	        <div class="item-content item-single group">
 	            <span class="stars four-stars">5 stars</span> 
