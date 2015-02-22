@@ -111,7 +111,7 @@
 					                       <p> <h5>Contra</h5> </p>
 					                       <p><?php echo $value['review_contra'];?></p>
 
-					                        <a href="#" class="btn-reply">Reply</a>
+					                       
 					                    </div>
 					                </div>
 					            </li>
