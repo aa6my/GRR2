@@ -8,7 +8,7 @@
 	<!-- Basic Page Needs
   ================================================== -->
 	<meta charset="utf-8">
-	<title>IndiGamer</title>
+	<title>Games Reviews and Recommendations</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 

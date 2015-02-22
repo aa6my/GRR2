@@ -2,39 +2,40 @@
 	<footer class="container">
 		<div class="sixteen columns">
 			
-			<aside class="four columns alpha widget">
-				<h4>Widget header</h4>
-				<p>Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>
-				<p>Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>	
-			</aside><!-- /widget -->
-	
 			<aside class="four columns widget">
-				<h4>Widget header</h4>
+				<h4>Frequent Asked Question</h4>
 				<ul>
-					<li><a href="#">Mauris vel neque sit amet</a></li>
-					<li><a href="#">Mauris vel neque sit amet</a></li>
-					<li><a href="#">Mauris vel neque sit amet</a></li>
-					<li><a href="#">Mauris vel neque sit amet</a></li>
-					<li><a href="#">Mauris vel neque sit amet</a></li>
+					<li><a href="#">FAQ</a></li>
 				</ul>	
 			</aside><!-- /widget -->
+
 			
 			<aside class="four columns widget">
-				<h4>Widget header</h4>
-				<p>Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>
-				<p>Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>	
+
+				<h4>Contact</h4>
+				<ul>
+					<li><a href="#">Contact Details</a></li>
+				</ul>	
 			</aside><!-- /widget -->
+
+
+			<aside class="four columns widget">
+				<h4>About Us</h4>
+				<ul>
+					<li><a href="#">About the website</a></li>
+				</ul>	
+			</aside><!-- /widget -->
+
 			
-			<aside class="four columns omega widget">
-				<h4>Widget header</h4>
-				<p>Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>	
-			</aside><!-- /widget -->
+
+			
+
 					
 		</div><!-- /sixteen -->
 	</footer><!-- /footer -->
 	<div class="credits-wrap">
 		<div class="container">
-			<p class="sixteen columns">A site template by <a href="http://www.cssigniter.com">cssigniter.com</a></p>
+			<p class="sixteen columns">Powered by Lyssna</a></p>
 		</div>
 	</div>
 </div><!-- /footer-wrap -->

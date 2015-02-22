@@ -5,13 +5,7 @@
 					<h1 class="logo nmb"><a href="#"><img src="<?php echo base_url() ?>assets/images/logo.png" alt="IndiGamer" /></a></h1>
 				</hgroup><!-- /hgroup -->
 				
-				<p class="eight columns omega social-links">
-					<a href="#" class="icn facebook">Facebook</a>
-					<a href="#" class="icn twitter">Twitter</a>
-					<a href="#" class="icn dribbble">Dribbble</a>
-					<a href="#" class="icn wordpress">WordPress</a>
-					<a href="#" class="icn rss">RSS</a>					
-				</p><!-- /social -->
+
 			</div><!-- /logo-social -->	
 			
 			<div class="row nav-search">

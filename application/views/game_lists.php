@@ -10,15 +10,15 @@
 		<div class="sixteen columns">			
 			<div class="row latest-reviews">
 			<br/>
-				<h3>Latest Reviews</h3>
-				<h4 class="sub">Subheader with a small description</h4>
+				<h3>All Games</h3>
+				<h4 class="sub">List of All games</h4>
 				<?php 
 				foreach ($game_list as $key => $value)
 			    { ?>
 				<article class="four columns alpha item">
 					<img alt="" src="<?php echo base_url()."upload/images/".$value['game_image'];?>" class="scale-with-grid" />
 					<div class="item-content">
-						<span class="stars four-stars">5 stars</span>
+						<span class="stars three-stars">5 stars</span>
 						<time datetime="2012-10-15"> <?php echo $value['game_release'];?></time>							
 						<h2><a href="<?php echo base_url();?>games/game_list_view/<?php echo $value['game_id'];?>" target="_blank"><?php echo $value['game_title'];?></a></h2>
 						<p class="categories"><?php echo $value['game_genre'];?></p>
