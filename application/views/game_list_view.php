@@ -76,27 +76,41 @@
 					                        <p><?php echo $value['review_story'];?></p>
 					                        
 					                        <p>
-						                        Gameplay
+						                       <h5> Gameplay </h5>
 						                        <p>
 						                        	<span class="stars <?php echo $value['review_gameplay'];?>-stars">5 stars</span>
 						                        </p>
 
 						                    </p>
 					                        <p>
-						                        Graphic
+						                       <h5> Graphic </h5>
 						                        <p>
 						                        	<span class="stars <?php echo $value['review_graphic'];?>-stars">5 stars</span>
 						                        </p>
 						                        
 						                    </p>
 						                    <p>
-						                        Music
+						                       <h5> Music </h5>
 						                        <p>
 						                        	<span class="stars <?php echo $value['review_music'];?>-stars">5 stars</span>
 						                        </p>
 						                        
 						                    </p>
-					                       
+						                    <P> <h5>Gameplay</h5> </P>
+					                       <p><?php echo $value['review_gameplaytx'];?></p>
+
+					                       <P> <h5>Graphic</h5> </P>
+					                       <p><?php echo $value['review_graphictx'];?></p>
+
+					                       <P> <h5>Music</h5> </P>
+					                       <p><?php echo $value['review_musictx'];?></p>
+
+						                    <P> <h5>Pro</h5> </P>
+					                       <p><?php echo $value['review_pro'];?></p>
+
+					                       <p> <h5>Contra</h5> </p>
+					                       <p><?php echo $value['review_contra'];?></p>
+
 					                        <a href="#" class="btn-reply">Reply</a>
 					                    </div>
 					                </div>
