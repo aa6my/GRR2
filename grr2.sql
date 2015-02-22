@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.2.11
+-- version 4.2.7.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Jan 27, 2015 at 07:01 PM
--- Server version: 5.6.21
--- PHP Version: 5.6.3
+-- Host: 127.0.0.1
+-- Generation Time: Feb 22, 2015 at 06:34 PM
+-- Server version: 5.6.20
+-- PHP Version: 5.5.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -36,14 +36,15 @@ CREATE TABLE IF NOT EXISTS `games` (
   `game_image` varchar(100) NOT NULL,
   `game_trailer` varchar(50) NOT NULL,
   `game_release` date NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `games`
 --
 
 INSERT INTO `games` (`game_id`, `game_title`, `game_summary`, `game_content`, `game_requirement`, `game_genre`, `game_image`, `game_trailer`, `game_release`) VALUES
-(1, 'Max Payne', 'Max Payne is a third-person shooter video game developed by Remedy Entertainment and published by Gathering of Developers on July 2001 for Microsoft Windows. Ports created later in the year for the PlayStation 2, Xbox and the Game Boy Advance were published by Rockstar Games. A Mac OS port was published on July 16, 2002 by MacSoft in North America and Feral Interactive in the rest of the world.[2] There were plans for a Dreamcast version of Max Payne, but they were canceled due to the discontinuation of the console.[5] The game was re-released on April 27, 2009 as a downloadable game in the Xbox Originals program for the Xbox 360.[6] The game was also re-released in the spring of 2012 as a downloadable game in the PlayStation Store for the PlayStation 3 under the PS2 classics banner, iOS and on Android.\r\n', 'Max Payne is a third-person shooter video game developed by Remedy Entertainment and published by Gathering of Developers on July 2001 for Microsoft Windows. Ports created later in the year for the PlayStation 2, Xbox and the Game Boy Advance were published by Rockstar Games. A Mac OS port was published on July 16, 2002 by MacSoft in North America and Feral Interactive in the rest of the world.[2] There were plans for a Dreamcast version of Max Payne, but they were canceled due to the discontinuation of the console.[5] The game was re-released on April 27, 2009 as a downloadable game in the Xbox Originals program for the Xbox 360.[6] The game was also re-released in the spring of 2012 as a downloadable game in the PlayStation Store for the PlayStation 3 under the PS2 classics banner, iOS and on Android.\r\n', 'Graphic Card', 'Third Person Shooter', 'maxpayne.jpg', '52vu-uzfbTQ', '2015-01-14');
+(1, 'Max Payne', 'Max Payne is a third-person shooter video game developed by Remedy Entertainment and published by Gathering of Developers on July 2001 for Microsoft Windows. Ports created later in the year for the PlayStation 2, Xbox and the Game Boy Advance were published by Rockstar Games. A Mac OS port was published on July 16, 2002 by MacSoft in North America and Feral Interactive in the rest of the world.[2] There were plans for a Dreamcast version of Max Payne, but they were canceled due to the discontinuation of the console.[5] The game was re-released on April 27, 2009 as a downloadable game in the Xbox Originals program for the Xbox 360.[6] The game was also re-released in the spring of 2012 as a downloadable game in the PlayStation Store for the PlayStation 3 under the PS2 classics banner, iOS and on Android.\r\n', 'Max Payne is a third-person shooter video game developed by Remedy Entertainment and published by Gathering of Developers on July 2001 for Microsoft Windows. Ports created later in the year for the PlayStation 2, Xbox and the Game Boy Advance were published by Rockstar Games. A Mac OS port was published on July 16, 2002 by MacSoft in North America and Feral Interactive in the rest of the world.[2] There were plans for a Dreamcast version of Max Payne, but they were canceled due to the discontinuation of the console.[5] The game was re-released on April 27, 2009 as a downloadable game in the Xbox Originals program for the Xbox 360.[6] The game was also re-released in the spring of 2012 as a downloadable game in the PlayStation Store for the PlayStation 3 under the PS2 classics banner, iOS and on Android.\r\n', 'Graphic Card', 'Third Person Shooter', 'maxpayne2.jpg', '52vu-uzfbTQ', '2015-01-14'),
+(2, 'Pokemon', 'Computer software is one technology that plays major roles in our daily lives. Its application is found in every sphere of life especially banks, government parastatals, homes and private enterprises. The use of information-based systems driven by software technology is so fundamental to the operation and management of businesses that.\r\n\r\nThis is just a random text.', 'Game is good and should be perfectly done.', 'i5 Intel Processing power.\r\n\r\n\r\nGTX 980 GC to run smoothly.\r\n\r\nRandom Text.', 'RPG', 'pokemon.jpg', '', '2014-07-08');
 
 -- --------------------------------------------------------
 
@@ -62,14 +63,17 @@ CREATE TABLE IF NOT EXISTS `reviews` (
   `review_music` varchar(10) NOT NULL,
   `review_pro` text NOT NULL,
   `review_contra` text NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `reviews`
 --
 
 INSERT INTO `reviews` (`review_id`, `game_id`, `user_id`, `review_title`, `review_story`, `review_gameplay`, `review_graphic`, `review_music`, `review_pro`, `review_contra`) VALUES
-(1, 1, 2, 'Test', 'Max Payne has suffered beyond reasonable limits. (It''s all in the name.) Nine years have passed since the last game in the series, yet little has changed for its long-suffering protagonist, who remains deeply traumatised by the death of his wife and child. ‘Trauma’ is the key word – in Greek, it means ‘wound’, and Max is someone who has never let his fully heal. To move on would be to forget – a betrayal of those he loved – and so instead he chooses to wallow in the past and the pain, with the help of brown liquor and white pills.', 'Max Payne ', 'two', 'three', 'test', 'test');
+(1, 1, 2, 'Test', 'Max Payne has suffered beyond reasonable limits. (It''s all in the name.) Nine years have passed since the last game in the series, yet little has changed for its long-suffering protagonist, who remains deeply traumatised by the death of his wife and child. ‘Trauma’ is the key word – in Greek, it means ‘wound’, and Max is someone who has never let his fully heal. To move on would be to forget – a betrayal of those he loved – and so instead he chooses to wallow in the past and the pain, with the help of brown liquor and white pills.', 'Max Payne ', 'two', 'three', 'test', 'test'),
+(2, 1, 1, 'Max Payne', 'long stuff long stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stuff', '', '', '', 'propropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropro', 'ConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConCon'),
+(3, 1, 1, 'Max Payne', 'long stuff long stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stufflong stuff', '', '', '', 'propropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropropro', 'ConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConConCon'),
+(4, 1, 1, 'I dont care also', 'I dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about this', 'three', 'four', 'five', 'I dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about this', 'I dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisI dont acre about thisvv');
 
 -- --------------------------------------------------------
 
@@ -91,14 +95,14 @@ CREATE TABLE IF NOT EXISTS `system_users` (
   `verification_status` tinyint(1) NOT NULL DEFAULT '0',
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `avatar` varchar(250) COLLATE utf8_bin NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `system_users`
 --
 
 INSERT INTO `system_users` (`id`, `email`, `password`, `salt`, `user_role_id`, `last_login`, `last_login_ip`, `reset_request_code`, `reset_request_time`, `reset_request_ip`, `verification_status`, `status`, `avatar`) VALUES
-(1, 'admin@admin.com', '8e666f12a66c17a952a1d5e273428e478e02d943', '4f6cdddc4979b8.51434094', 1, '2015-01-25 12:23:25', '::1', NULL, NULL, NULL, 1, 1, ''),
+(1, 'admin@admin.com', '8e666f12a66c17a952a1d5e273428e478e02d943', '4f6cdddc4979b8.51434094', 1, '2015-02-21 21:41:10', '::1', NULL, NULL, NULL, 1, 1, ''),
 (2, 'adminah@admin.com', '8e666f12a66c17a952a1d5e273428e478e02d943', '4f6cdddc4979b8.51434094', 1, '2015-01-25 12:23:25', '::1', NULL, NULL, NULL, 1, 1, 'Panda_Icon_by_cheepers.gif');
 
 -- --------------------------------------------------------
@@ -157,7 +161,7 @@ CREATE TABLE IF NOT EXISTS `user_role` (
 `id` int(5) unsigned NOT NULL,
   `role_name` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `default_access` varchar(10) COLLATE utf8_bin DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=2 ;
 
 --
 -- Dumping data for table `user_role`
@@ -220,12 +224,12 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `games`
 --
 ALTER TABLE `games`
-MODIFY `game_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `game_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-MODIFY `review_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `review_id` int(5) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `system_users`
 --
