@@ -22,7 +22,7 @@
 			<aside class="four columns widget">
 				<h4>About Us</h4>
 				<ul>
-					<li><a href="#">About the website</a></li>
+					<li><a href="#">About the Website</a></li>
 				</ul>	
 			</aside><!-- /widget -->
 
