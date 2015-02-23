@@ -22,3 +22,4 @@
 </div><!-- /container -->
 
 <?php $this->load->view('footer'); ?>
+<?php $this->output->enable_profiler(TRUE); ?>

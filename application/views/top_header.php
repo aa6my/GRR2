@@ -22,6 +22,25 @@
 								<li><a href="<?php echo base_url() ?>games/popular">Popular Games</a></li>
 							</ul>
 						</li>
+						<?php 
+						if($this->ezrbac->isGuest()){
+						echo '
+						<li>
+							<a href="'.base_url().'register">Register</a>
+						</li>
+						<li>
+							<a href="'.base_url().'users">Login</a>
+						</li>
+						';
+						}
+						else{
+						echo '
+						<li>
+							<a href="'.base_url().'rbac/logout">Logout</a>
+						</li>
+						';	
+						}		
+						?>
 					</ul>
 				</nav><!-- /nav -->
 				<form method="post" action="action.php" id="search" class="four columns omega">
