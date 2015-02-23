@@ -5,7 +5,7 @@
 			<aside class="four columns widget">
 				<h4>Frequent Asked Question</h4>
 				<ul>
-					<li><a href="#">FAQ</a></li>
+					<li><a href="<?php echo base_url() ?>about/faq">FAQ</a></li>
 				</ul>	
 			</aside><!-- /widget -->
 

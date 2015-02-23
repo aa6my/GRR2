@@ -17,5 +17,11 @@ class About extends CI_Controller {
     	$this->load->view('contactus');
         
     }
+
+    function faq() {
+
+    	$this->load->view('faq');
+        
+    }
 }
         
