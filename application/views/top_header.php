@@ -22,20 +22,6 @@
 								<li><a href="<?php echo base_url() ?>games/popular">Popular Games</a></li>
 							</ul>
 						</li>
-						<li>
-							<a href="#">News</a>
-							<ul>
-								<li><a href="<?php echo base_url() ?>news/newrelease">New Release</a></li>
-								<li><a href="<?php echo base_url() ?>news/comingsoon">Coming Soon</a></li>	
-							</ul>
-						</li>
-						<li>
-							<a href="#">About Us</a>
-							<ul>
-								<li><a href="<?php echo base_url() ?>about">About</a></li>
-								<li><a href="<?php echo base_url() ?>about/contactus">Contact Us</a></li>	
-							</ul>
-						</li>
 					</ul>
 				</nav><!-- /nav -->
 				<form method="post" action="action.php" id="search" class="four columns omega">
