@@ -30,7 +30,8 @@ a:hover
 <body>
 	<div>
 		<a href='<?php echo base_url();?>admin'>Games Management</a> |
-		<a href='<?php echo base_url();?>admin/review'>Reviews Management</a>
+		<a href='<?php echo base_url();?>admin/review'>Reviews Management |</a>
+		<a href='<?php echo base_url();?>rbac/logout'>Logout</a>
 		<!-- <a href='<?php echo site_url('examples/orders_management')?>'>Orders</a> |
 		<a href='<?php echo site_url('examples/products_management')?>'>Products</a> |
 		<a href='<?php echo site_url('examples/offices_management')?>'>Offices</a> | 
