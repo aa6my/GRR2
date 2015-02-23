@@ -2,7 +2,7 @@
 		<header class="sixteen columns">
 			<div class="row logo-social">
 				<hgroup class="eight columns alpha">
-					<h1 class="logo nmb"><a href="#"><img src="<?php echo base_url() ?>assets/images/logo.png" alt="IndiGamer" /></a></h1>
+					<h1 class="logo nmb"><a href="#"><img src="<?php echo base_url() ?>assets/images/logo6.png" alt="IndiGamer" /></a></h1>
 				</hgroup><!-- /hgroup -->
 				
 
