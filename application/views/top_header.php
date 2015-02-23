@@ -43,9 +43,7 @@
 						?>
 					</ul>
 				</nav><!-- /nav -->
-				<form method="post" action="action.php" id="search" class="four columns omega">
-					<p><input type="text" title="Search" /></p>
-				</form>
+				
 			</div><!-- /nav-search -->		
 		</header><!-- /header -->
 	</div><!-- row -->
