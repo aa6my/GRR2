@@ -19,7 +19,9 @@ class Admin extends CI_Controller {
 		$crud = new grocery_CRUD();
         $state = $crud->getState();
 		$data['page_header_title'] = "Games List Management";
-		$crud->set_table('games');	
+		$crud->set_table('games');
+		$crud->set_field_upload('game_image','upload/images');
+		$crud->unset_texteditor('game_trailer');
 		$output = $crud->render();
 		$output->data = $data;
 		$this->load->view('crud', $output);
