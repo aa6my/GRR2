@@ -72,7 +72,9 @@
 					                <div class="comment-text group">
 					                    <img alt="" src="<?php echo base_url().'upload/avatar/'.$review[0]['avatar'];?>" class="avatar"/>				
 					                    <div class="comment-copy">
-					                        <p class="comment-meta"><?php echo $value['review_title'];?></p>				
+					                        <p class="comment-meta"><?php echo $value['review_title'];?></p>
+					                        <br></br>				
+					                        <p><h5> Content </h5></p>
 					                        <p><?php echo $value['review_story'];?></p>
 					                        
 					                        <p>
@@ -96,15 +98,7 @@
 						                        </p>
 						                        
 						                    </p>
-						                    <P> <h5>Gameplay</h5> </P>
-					                       <p><?php echo $value['review_gameplaytx'];?></p>
-
-					                       <P> <h5>Graphic</h5> </P>
-					                       <p><?php echo $value['review_graphictx'];?></p>
-
-					                       <P> <h5>Music</h5> </P>
-					                       <p><?php echo $value['review_musictx'];?></p>
-
+						             
 						                    <P> <h5>Pro</h5> </P>
 					                       <p><?php echo $value['review_pro'];?></p>
 

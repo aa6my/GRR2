@@ -89,32 +89,11 @@
 	                    </li>
 
 	                    <li class="good">
-	                        <h4>Story</h4>
+	                        <h4>Content</h4>
 	                        <p>	                        
 	                        	<textarea name="review_story" cols="100%" rows="5"></textarea>
   							</p>
-	                    </li>
-
-	                    <li class="good">
-	                        <h4>Gameplay</h4>
-	                        <p>	                        
-	                        	<textarea name="review_gameplaytx" cols="100%" rows="5"></textarea>
-  							</p>
-	                    </li>
-
-	                    <li class="good">
-	                        <h4>Graphic</h4>
-	                        <p>	                        
-	                        	<textarea name="review_graphictx" cols="100%" rows="5"></textarea>
-  							</p>
-	                    </li>
-
-
-	                    <li class="good">
-	                        <h4>Music</h4>
-	                        <p>	                        
-	                        	<textarea name="review_musictx" cols="100%" rows="5"></textarea>
-  							</p>
+	                    
 	                    </li>
 	                    <li class="good">
 	                        <h4>Pro</h4>
