@@ -10,10 +10,10 @@
 		<div class="sixteen columns">			
 			<div class="row latest-reviews">
 			<br/>
-				<h3>All Games</h3>
-				<h4 class="sub">List of All games</h4>
+				<h3>All Latest Games</h3>
+				<h4 class="sub">List of All Latest Games</h4>
 				<?php 
-				foreach ($game_list as $key => $value)
+				foreach ($game_list_latest as $key => $value)
 			    { ?>
 				<article class="four columns alpha item">
 					<img alt="" src="<?php echo base_url()."upload/images/".$value['game_image'];?>" class="scale-with-grid" />

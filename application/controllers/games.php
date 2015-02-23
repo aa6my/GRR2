@@ -29,15 +29,46 @@ class Games extends CI_Controller {
 
 
 		$table = "reviews";
-		//$tableNameToJoin = 'system_users';
-        //$tableRelation = "reviews.user_id = system_users.id";
+		
 
         $tableNameToJoin = array('system_users');       
-        $tableRelation = array('reviews.user_id = system_users.id'
-                               );
-        //$this->Midae_model->get_all_rows1("invoices", $where, $tableNameToJoin, $tableRelation, false, false); 
-		$data['review']  = $this->grr_model->get_all_rows($table,$where, $tableNameToJoin, $tableRelation, false, false);
+        $tableRelation = array('reviews.user_id = system_users.id');
+       
+		$data['review']  = $this->grr_model->get_all_review($table,$where, $tableNameToJoin, $tableRelation, 'desc');
+		$data['user_id'] = $user_id = $this->ezrbac->getCurrentUserID();
 		$this->load->view('game_list_view.php', $data);
+
+		
+	}
+
+	public function reviewupvote(){
+
+		if($this->input->post('jenis')=="vote"){
+			$review_id = $this->input->post('review_id');
+			$tableToUpdate = "reviews";
+			$where = array('review_id'=>$review_id);
+			$sel = $this->grr_model->get_specified_row($tableToUpdate,$where,false,false, false);	
+			
+			$usingCondition = $where;		
+			$columnToUpdate = array('review_vote' =>1 + $sel['review_vote']);
+			$this->grr_model->update_data($columnToUpdate, $tableToUpdate, $usingCondition);
+			$s = 1;
+			echo $s;
+		}
+	}
+
+	public function popular(){
+
+		$table = "games";
+		$data['game_list_popular']  = $this->grr_model->get_popular_games();
+		$this->load->view('game_list_popular.php', $data);
+	}
+
+	public function latest(){
+
+		$table = "games";
+		$data['game_list_latest']  = $this->grr_model->get_latest_games();
+		$this->load->view('game_latest.php', $data);
 	}
 }
 

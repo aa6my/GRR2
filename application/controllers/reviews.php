@@ -4,13 +4,13 @@ class Reviews extends CI_Controller {
 
 	public function __construct(){
         parent::__construct();
-        $this->load->helper('url');
         $this->output->enable_profiler(TRUE);
     }
 
 	public function access_map(){
         return array(
             'index'=>'view',
+            'upvote'=>'view',
             'add'=>'view',
             'update'=>'edit'
         );
@@ -41,7 +41,7 @@ class Reviews extends CI_Controller {
 			$this->grr_model->insert_new_data($arrayData,$table);
 
 			
-			$table = "games";
+			/*$table = "games";
 			$where = array('game_id'=>$game_id);
 			$sel = $this->grr_model->get_specified_row($table,$where,false,false, false);			
 			
@@ -49,7 +49,7 @@ class Reviews extends CI_Controller {
 			$tableToUpdate = "games";
 			$usingCondition = array('game_id'=>$game_id);			
 			$columnToUpdate = array('game_vote' => $this->input->post('game_vote') + $sel['game_vote']);
-			$this->grr_model->update_data($columnToUpdate, $tableToUpdate, $usingCondition);
+			$this->grr_model->update_data($columnToUpdate, $tableToUpdate, $usingCondition);*/
 		}
 
 
@@ -60,6 +60,24 @@ class Reviews extends CI_Controller {
 		$this->load->view('review_add.php', $data);
 
 
+	}
+
+
+	public function upvote(){
+
+		$game_id = $this->uri->segment(3);
+		$table = "games";
+		$where = array('game_id'=>$game_id);
+		$data['game']  = $this->grr_model->get_all_rows($table,$where,false, false, false, false);
+
+		$table = "reviews";	
+
+        $tableNameToJoin = array('system_users');       
+        $tableRelation = array('reviews.user_id = system_users.id'
+                               );        
+		$data['review']  = $this->grr_model->get_all_review($table,$where, $tableNameToJoin, $tableRelation, 'desc');
+		$data['user_id'] = $user_id = $this->ezrbac->getCurrentUserID();	
+		$this->load->view('game_list_view.php', $data);
 	}
 
 	

@@ -202,6 +202,61 @@ class Grr_model extends CI_Model {
             
     }
 
+    function get_all_review($table,$where, $tableNameToJoin, $tableRelation, $order_by)
+    {
+            
+            $this->db->select('*');
+            $this->db->from($table);
+
+            if($where!=false){
+               $this->db->where($where);
+            }
+           
+           if($tableNameToJoin!=false && $tableRelation!=false){
+                for ($i=0; $i < count($tableNameToJoin); $i++){
+                    $this->db->join($tableNameToJoin[$i], $tableRelation[$i]);
+                }
+                
+           }
+
+            $this->db->order_by('review_vote', $order_by); 
+           
+           
+            $query = $this->db->get();
+            return $query->result_array(); 
+            
+    }
+
+    function get_popular_games()
+    {
+            
+            $this->db->select('*');
+            $this->db->from('games');
+
+           
+            $this->db->order_by('game_vote', 'desc'); 
+           
+           
+            $query = $this->db->get();
+            return $query->result_array(); 
+            
+    }
+
+    function get_latest_games()
+    {
+            
+            $this->db->select('*');
+            $this->db->from('games');
+
+           
+            $this->db->order_by('game_release', 'desc'); 
+           
+           
+            $query = $this->db->get();
+            return $query->result_array(); 
+            
+    }
+
 
     /**
      * [display_message display flash message data in view part]

@@ -59,20 +59,29 @@
 	    </article><!-- /single -->	
 	    <div class="row post-comments">
 					        <h2>User Reviews <a href="<?php echo base_url().'reviews/add/'.$game[0]['game_id'];?>" class="btn-reply">Add review</a></h2>
+					        <input type="hidden" name="game_vote" id="game_vote">
 					        <ol id="comment-list">	
 					        <?php 
+					        $km = 0;
+					        $mk = 0;
+					        $kn = 0;
+					        $kc = 0;
+					       
 					        foreach ($review as $key => $value)
 					        {
-					        	
-					        
-					        	?>
-					        	
+					        	?>					        	
 					       			           
 					            <li class="comment depth-1">
 					                <div class="comment-text group">
 					                    <img alt="" src="<?php echo base_url().'upload/avatar/'.$review[0]['avatar'];?>" class="avatar"/>				
 					                    <div class="comment-copy">
-					                        <p class="comment-meta"><?php echo $value['review_title'];?></p>
+					                        <p class="comment-meta"><?php echo $value['review_title'];?> 
+						                        <input type="button" id="b_vote<?php echo $kn++;?>" value="Up Vote" data-bil="<?php echo $mk++;?>">
+						                        <input type="hidden" id="review_id<?php echo $kc++;?>" value="<?php echo $value['review_id'];?>">                      
+					                        	
+					                        	
+				                        	</p>
+				                        	<span id="vote_status<?php echo $km++;?>"></span>
 					                        <br></br>				
 					                        <p><h5> Content </h5></p>
 					                        <p><?php echo $value['review_story'];?></p>
@@ -115,6 +124,42 @@
 					            
 					        </ol>
 					    </div><!-- /post-comments -->
+
+					    <script type="text/javascript">
+					    	
+
+							$('input[type=button]').on('click', function(){
+								var number = $(this).data('bil');
+								var user_id = '<?php echo $user_id;?>';
+								var review_id = $('#review_id'+number);
+
+								//console.log(review_id.val());
+								if(user_id){
+
+									if(window.confirm("This action can't be undone, are you sure?"))
+									{
+	     								//$('#game_vote').val(1);
+	     								//$('#vote_status'+number).html('<font color="green">Thank you.');
+	     								//window.location = '<?php echo base_url();?>reviews/upvote/'+<?php echo $game[0]['game_id'];?>;
+	     								$.ajax({
+	     									type : 'POST',
+	     									url : '<?php echo base_url();?>games/reviewupvote',
+	     									data : 'jenis=vote&review_id='+review_id.val(),
+	     									success : function(msg){
+	     										$('#vote_status'+number).html('<font color="green">Thank you. Your voting will take effect after a fews minutes.');
+	     									}
+	     								})
+									}
+									else{
+										return false;
+									}
+								}
+								else{
+									alert('Please login first before voting!!!');
+									window.location = '<?php echo base_url();?>reviews/upvote/'+<?php echo $game[0]['game_id'];?>;
+								}
+							})
+					    </script>
 
     </div><!-- /row -->
     </div><!-- /container -->

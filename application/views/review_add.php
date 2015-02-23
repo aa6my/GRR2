@@ -93,14 +93,14 @@
 	                        	<textarea name="review_contra" cols="100%" rows="5"></textarea>
   							</p>
 	                    </li>
-	                    <li class="good">
+	                    <!-- <li class="good">
 	                        <h4>Vote</h4>
 	                        <p>	   
 	                        	<input type="button" id="b_vote" value="Upvote">                     
 	                        	<input type="hidden" name="game_vote" id="game_vote">
 	                        	<span id="vote_status"></span>
   							</p>
-	                    </li>
+	                    </li> -->
 						
 
 	                    
@@ -122,7 +122,7 @@
 									
 							});
 
-							$('#b_vote').on('click', function(){
+							/*$('#b_vote').on('click', function(){
 
 								if(window.confirm("This action can't be undone, are you sure?"))
 								{
@@ -132,7 +132,7 @@
 								else{
 									return false;
 								}
-							})
+							})*/
 						})
 						</script>
 	            
