@@ -25,6 +25,7 @@ class Reviews extends CI_Controller {
 
 		if($this->input->post('save')){
 
+			
 			$user_id = $this->ezrbac->getCurrentUserID();			
 			$arrayData = array( 'game_id' => $game_id,
 								'user_id' => $user_id,
@@ -38,6 +39,17 @@ class Reviews extends CI_Controller {
 
 			$table = "reviews";
 			$this->grr_model->insert_new_data($arrayData,$table);
+
+			
+			$table = "games";
+			$where = array('game_id'=>$game_id);
+			$sel = $this->grr_model->get_specified_row($table,$where,false,false, false);			
+			
+
+			$tableToUpdate = "games";
+			$usingCondition = array('game_id'=>$game_id);			
+			$columnToUpdate = array('game_vote' => $this->input->post('game_vote') + $sel['game_vote']);
+			$this->grr_model->update_data($columnToUpdate, $tableToUpdate, $usingCondition);
 		}
 
 

@@ -66,21 +66,7 @@
 	                        
 	                        </p>
 	                    </li>
-						<script type="text/javascript">
-						$(function(){
-							$('span.stars').on('click', function(){
-								var current_this = $(this),
-									star = current_this.text(),
-									type = current_this.data('type');
-
-									$('#'+type+'_rate').removeClass();
-									$('#'+type+'_rate').addClass('stars '+star+'-stars');
-									$('#'+type+'_input').val(star);
-									
-									
-							})
-						})
-						</script>
+						
 	                    <li class="good">
 	                        <h4>Title</h4>
 	                        <p>	                        
@@ -107,6 +93,14 @@
 	                        	<textarea name="review_contra" cols="100%" rows="5"></textarea>
   							</p>
 	                    </li>
+	                    <li class="good">
+	                        <h4>Vote</h4>
+	                        <p>	   
+	                        	<input type="button" id="b_vote" value="Upvote">                     
+	                        	<input type="hidden" name="game_vote" id="game_vote">
+	                        	<span id="vote_status"></span>
+  							</p>
+	                    </li>
 						
 
 	                    
@@ -114,7 +108,33 @@
 	                <input type="submit" name="save" class="button" value="Submit Your Review">
 	             </form>
 	            </div>
-	
+			<script type="text/javascript">
+						$(function(){
+							$('span.stars').on('click', function(){
+								var current_this = $(this),
+									star = current_this.text(),
+									type = current_this.data('type');
+
+									$('#'+type+'_rate').removeClass();
+									$('#'+type+'_rate').addClass('stars '+star+'-stars');
+									$('#'+type+'_input').val(star);
+									
+									
+							});
+
+							$('#b_vote').on('click', function(){
+
+								if(window.confirm("This action can't be undone, are you sure?"))
+								{
+     								$('#game_vote').val(1);
+     								$('#vote_status').html('<font color="green">Thank you. Your voting will take effect after submit button clicked.');
+								}
+								else{
+									return false;
+								}
+							})
+						})
+						</script>
 	            
 	            
 
