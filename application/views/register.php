@@ -84,7 +84,7 @@
                         <li class="good">
                             <h4>Email <span id="music_rate"></span></h4>
                             <p>
-                             <input type="email" name="email" class="form-control" placeholder="Enter ..." REQUIRED>
+                             <input type="text" name="email" class="form-control" placeholder="Enter ..." REQUIRED>
                             
                             </p>
                         </li>
@@ -92,7 +92,7 @@
                         <li class="good">
                             <h4>Password</h4>
                             <p>                         
-                                <input type="text" name="password" class="form-control" placeholder="Enter ..." REQUIRED>
+                                <input type="password" name="password" class="form-control" placeholder="Enter ..." REQUIRED>
                             </p>
                         </li>
 
