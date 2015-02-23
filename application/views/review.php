@@ -1,6 +1,6 @@
 				<div class="row latest-reviews">
 					<h3>Latest Reviews</h3>
-					<h4 class="sub">Subheader with a small description</h4>
+					<h4 class="sub">Latest reviews added by users.</h4>
 					
 					<article class="one-third column alpha item">
 						<img alt="" src="assets/images/coverout3.png" class="scale-with-grid" />

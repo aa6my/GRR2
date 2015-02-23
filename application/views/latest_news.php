@@ -1,6 +1,6 @@
 				<div class="row latest-news">
-					<h3>Latest news</h3>
-					<h4 class="sub">Subheader with a small description</h4>
+					<h3>Latest Games</h3>
+					<h4 class="sub">Here are the lastest games that are released.</h4>
 					
 					<article class="two-thirds column alpha item item-vertical">
 						<div class="five columns alpha">
