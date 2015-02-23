@@ -14,7 +14,7 @@
 
 				<h4>Contact</h4>
 				<ul>
-					<li><a href="#">Contact Details</a></li>
+					<li><a href="<?php echo base_url() ?>about/contactus">Contact Details</a></li>
 				</ul>	
 			</aside><!-- /widget -->
 
@@ -22,7 +22,7 @@
 			<aside class="four columns widget">
 				<h4>About Us</h4>
 				<ul>
-					<li><a href="#">About the Website</a></li>
+					<li><a href="<?php echo base_url() ?>about">About the website</a></li>
 				</ul>	
 			</aside><!-- /widget -->
 
