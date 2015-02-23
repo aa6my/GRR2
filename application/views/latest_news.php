@@ -8,10 +8,10 @@
 						</div>						
 						<div class="five columns omega">
 							<div class="item-content">
-								<time datetime="2012-10-15">October 15th, 2012</time>							
-								<h2><a href="#">Single-player Dead Space games too scary, says EA</a></h2>
-								<p class="categories"><a href="#">xbox</a>, <a href="#">adventure</a></p>
-								<p class="excerpt">Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>
+								<time datetime="2012-10-15">January 15th, 2015</time>							
+								<h2><a href="#">Tomb Raider</a></h2>
+								<p class="categories"><a href="#">Xbox</a>,<a href="#">Playstation</a>,<a href="#">PC</a>, <a href="#">Adventure</a></p>
+								<p class="excerpt">Exeptionally the best Tomb Raider game that was ever made. The game is so immersive that the players cant stop playing it !</p>
 							</div>
 						</div>
 					</article>
@@ -23,10 +23,10 @@
 						</div>						
 						<div class="five columns omega">
 							<div class="item-content">
-								<time datetime="2012-10-15">October 15th, 2012</time>							
-								<h2><a href="#">Single-player Dead Space games too scary, says EA</a></h2>
-								<p class="categories"><a href="#">xbox</a>, <a href="#">adventure</a></p>
-								<p class="excerpt">Mauris vel neque sit amet nunc gravida congue sed sit amet purus. Quisque lacus quam, egestas ac tincidunt a, lacinia vel</p>
+								<time datetime="2012-10-15">January 14th, 2015</time>							
+								<h2><a href="#">Skyrim</a></h2>
+								<p class="categories"><a href="#">Xbox</a>,<a href="#">Playstation</a>,<a href="#">PC</a>,<a href="#">RPG</a>, <a href="#">Adventure</a></p>
+								<p class="excerpt">The best game for the single player prefered player. The mission are very addictive</p>
 							</div>
 						</div>
 					</article>	

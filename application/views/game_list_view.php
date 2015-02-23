@@ -13,7 +13,7 @@
 	       <center><img alt="" src="<?php echo base_url()."upload/images/".$game[0]['game_image'];?>" class="scale-with-grid"></center>
 	
 	        <div class="item-content item-single group">
-	            <span class="stars four-stars">5 stars</span> 
+	            <span class="stars three-stars">5 stars</span> 
 	
 	            <h2><?php echo $game[0]['game_title'];?></h2>
 	
